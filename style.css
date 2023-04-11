@@ -1,0 +1,101 @@
+body{
+	background-image: url(todo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#container {
+	padding: 15px;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: rgba(101, 82, 185, 0.8);
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+  }
+
+  #title {
+	text-align: center;
+  }
+
+  #list {
+	padding-top: 15px;
+  }
+
+  #list li {
+	list-style: none;
+	position: relative;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+  }
+
+  #list li:last-child {
+	border-bottom: none;
+  }
+
+  #list li.done {
+	text-decoration: line-through;
+  }
+
+  #list li .checkbox {
+	position: absolute;
+	left: 0;
+	top: 0;
+  }
+
+  #list li .checkbox:hover + label {
+	color: rgb(116, 233, 21);
+  }
+
+  #list li label {
+	position: relative;
+	left: 25px;
+	top: -1px;
+	color: #000;
+  }
+
+  #list li .delete {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 1.2em;
+	color: rgb(14, 13, 13);
+	cursor: pointer;
+  }
+
+  #list li .delete:hover {
+	color: rgb(57, 162, 189);
+  }
+
+  #form {
+	padding-top: 15px;
+	margin-left: 10px;
+  }
+
+  #form input {
+	border: none;
+	border-radius: 10px;
+	border-bottom: 1px solid #ccc;
+	font-size: 1.2em;
+	padding: 8px;
+	width: 90%;
+	outline: none;
+  }
+
+  #form input:focus {
+	border-bottom-color: rgb(36, 35, 35);
+  }
+
+  #form button {
+	background-color: rgb(22, 21, 21);
+	color: #fff;
+	font-size: 1.2em;
+	padding: 8px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 5px;
+	outline: none;
+  }
+
+  #form button:hover {
+	background-color: #f90;
+  }
